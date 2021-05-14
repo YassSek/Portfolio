@@ -1,0 +1,220 @@
+:root {
+    --primary:#FFB5C2;
+    /* --secondary:#61E786; */
+    --secondary:#61d9e7;
+
+    --myblack:#171A21;
+
+  }
+
+*{
+    margin:0px;
+    padding:0px;
+    word-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    color: var(--myblack);  
+}
+
+header{
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    margin: 1% 0 10% 0;
+}
+h1{
+    color: rgba(122, 122, 122, 0.452);
+    margin: 10px;
+    font-weight: bolder;
+    overflow: hidden;
+    transition: clip-path 275ms ease;
+}
+
+h1:hover::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+h1::before {
+    position: absolute;
+    content: attr(data-content);
+    background: rgb(97,217,231);
+    background: linear-gradient(90deg, rgba(97,217,231,1) 0%, rgba(233,233,233,0.639093137254902) 50%, rgb(250, 154, 171) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    transition: clip-path 475ms ease;
+}
+
+
+h3{
+    font-weight: bold;
+}
+
+p{
+    margin: 15px;
+    text-align: justify;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+}
+
+.container{
+    margin:10% 20% 0 20% ;
+    width: 60%;
+}
+
+.card{
+    padding:15px;
+    margin: 10px;
+    box-shadow: 0 4px 10px #000;
+    border-radius:10px;
+}
+
+.mybtn{
+    margin: 15px;
+    padding: 5px;
+    border: none;
+    color: white;
+}
+
+.blocR{
+    margin:5%;
+}
+.blocR > h3{
+    text-align: center;
+    margin-bottom: 1.75rem;
+    color: var(--primary);
+}
+
+.blocL{
+    margin:5%;
+}
+.blocL > h3{
+    text-align: center;
+    margin-bottom: 1.75rem;
+    color: var(--secondary);
+}
+.imgHov{
+    border-radius:10px;
+}
+.imgHov:hover{
+    filter:blur(2px);
+}
+
+/*About & contact*/
+#contact{
+    z-index: 12;
+    background-color: var(--secondary);
+}
+#about{
+    z-index: 12;
+    background-color: var(--primary);
+}
+#blocAbout{
+    z-index: 10;
+    position: absolute;
+    display: none;
+    background-color: var(--primary) ;
+    margin-left:0px;
+    margin-top: -20px;
+    width: 50vw;
+    height: 100vh;
+}
+
+
+#blocContact{
+    z-index: 10;
+    position: absolute;
+    display: none;
+    background-color: var(--secondary) ;
+    margin-right: 0px;
+    margin-left: 50vw;
+    margin-top: -20px;
+    width: 50vw;
+    height: 100vh;
+}
+
+#blocContact > form{
+    margin: 20%;
+    font-weight: bold;
+    color: white;
+}
+
+.infoContact{
+    display: inline-block;  
+}
+.infoContact > label{
+    margin: 10px;
+}
+.infoContact > input{
+    border-radius: 10px;
+}
+#msgContact>label{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+#msgContact>textarea{
+    width: 30vw;
+    height: 25vh;
+    border-radius: 10px;
+}
+#msgContact>input{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--primary);
+}
+
+/*Animation about & contact*/
+.slideAbout {
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+.slideContact {
+    animation-name: slideRight;
+    animation-duration: 2s;
+}
+@keyframes slideLeft {
+    from {  margin-left: -50vw;}
+    to { margin-left: 1vw;}        
+}
+
+@keyframes slideRight{
+    from {  margin-left: 120vw;}
+    to { margin-left: 50vw;}
+}
+
+
+
+/* Mobile */
+
+@media (min-width: 320px) and (max-width: 767px){
+
+    #blocContact{
+        width:100vw;
+        height: 150vh;
+        margin-left:0px;
+    }
+
+    #blocAbout{
+        width:100vw;
+        height: 150vh;
+    }
+
+    @keyframes slideLeft {
+    from {  margin-left: -50vw;}
+    to { margin-left: 0px;}
+        
+    }
+
+    @keyframes slideRight{
+        from {  margin-left: 100vw;}
+        to { margin-left: 0px;}
+            
+    }
+
+}

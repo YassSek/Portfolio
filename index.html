@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+   
+    <div id="blocAbout" >
+   
+    </div>
+
+    <div id="blocContact" >
+
+        <form id="contact-form">
+            
+            <input type="hidden" name="contact_number">
+
+            <span class="infoContact">
+                <label>Name</label>
+                <input type="text" name="user_name" placeholder=" Entrez votre nom svp">
+            </span>
+
+            <span class="infoContact">
+                <label>Email</label>
+                <input type="email" name="user_email" placeholder=" Entrez votre e-mail">
+            </span>
+            
+            <span id="msgContact">
+                <label>Message</label>
+                <textarea name="message" placeholder=" Votre message"></textarea>
+                <input type="submit" value="Send">
+            </span>
+            
+
+            
+        </form>
+    </div>
+    
+
+    <header>
+        <button id="about" class="-left-0 top-0 absolute font-bold rounded mybtn">ABOUT</button>
+        <h1 data-content="SEKRI YASSINE" class="text-5xl">SEKRI YASSINE</h1>
+        <h1 data-content="WEB DEVELOPER" class="text-5xl">WEB DEVELOPER</h1>
+        <button id="contact" class="-right-0 top-0 absolute font-bold rounded mybtn">CONTACT</button>
+    </header>    
+
+    <div class="grid grid-rows-4 grid-cols-2 grid-flow-row container">
+
+            <!-- ROW 1 -->
+            <div class="col-span-2 grid grid-cols-2 card">
+
+                <div class="col-span-1 blocL">
+                    <h3 class="text-4xl">Allez-Cine</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero quia amet repellat sit fugit qui corrupti. Eligendi, et laudantium quam, aspernatur in nisi maxime explicabo sapiente tempore quis eaque voluptate!</p>
+                </div>
+
+                <div class="col-span-1">
+                    <a href="https://miniyass.github.io/Allez-Cine/" target="_blank"><img class="object-cover imgHov" src="./img/Allezcine.png" alt="ici un petit geranium"></a>
+                </div>
+
+            </div>
+            
+            <!-- ROW 2 -->
+            <div class="col-span-2 grid grid-cols-2 card">
+
+                <div  class="col-span-1">   
+                    <a href="https://miniyass.github.io/TodoList-Challenge/" target="_blank">
+                        <img class="object-cover imgHov" src="./img/todoapp.jpg" alt="ici un petit geranium">
+                    </a>      
+                    
+                </div>
+
+                <div  class="col-span-1 blocR">
+                    <h3 class="text-4xl">Todo App</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quia maxime, culpa quibusdam quod fugit recusandae ullam labore cum hic eveniet provident possimus soluta officia! Error sunt quas exercitationem non.</p>
+                </div>
+            </div>
+
+            <!-- ROW 3 -->
+            <div class="col-span-2 grid grid-cols-2 card">   
+
+                <div  class="col-span-1 blocL">
+                    <h3 class="text-4xl">Vue Pomodoro</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis harum aliquid sed alias odit sequi ea earum, aperiam quo cupiditate similique. Culpa alias fugit sunt ipsa eos dolores labore. Accusantium.</p>
+                </div>
+
+                <div class="col-span-1">
+                    <a href="https://miniyass.github.io/pomodoro/" target="_blank">
+                    <img class="object-cover imgHov " src="./img/Pomodoro.png" alt="Pomodoro Screenshot">
+                    </a>  
+                </div>
+
+            </div>
+
+            <!-- ROW 4 -->
+            <div class="col-span-2 grid grid-cols-2 card">
+
+                <div  class="col-span-1">    
+
+                    <a href="https://miniyass.github.io/Ip-Tracker/"  target="_blank"><img class="object-cover imgHov" src="./img/iptracker.jpg" alt="ici un petit geranium"></a>
+                </div>
+
+                <div  class="col-span-1 blocR">
+                    <h3 class="text-4xl">IP Tracker</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quia maxime, culpa quibusdam quod fugit recusandae ullam labore cum hic eveniet provident possimus soluta officia! Error sunt quas exercitationem non.</p>
+                </div>
+            </div>
+        
+        
+    </div>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<!-- 
+INSPIRATION 
+
+https://utica-demo.squarespace.com/?nochrome=true -->
