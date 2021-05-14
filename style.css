@@ -83,7 +83,7 @@ p{
 .blocR{
     margin:5%;
 }
-.blocR > h3{
+.blocR >a> h3{
     text-align: center;
     margin-bottom: 1.75rem;
     color: var(--primary);
@@ -92,7 +92,7 @@ p{
 .blocL{
     margin:5%;
 }
-.blocL > h3{
+.blocL > a >h3{
     text-align: center;
     margin-bottom: 1.75rem;
     color: var(--secondary);
@@ -180,7 +180,7 @@ p{
 }
 @keyframes slideLeft {
     from {  margin-left: -50vw;}
-    to { margin-left: 1vw;}        
+    to { margin-left: 0vw;}        
 }
 
 @keyframes slideRight{
