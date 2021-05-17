@@ -83,7 +83,7 @@ p{
 .blocR{
     margin:5%;
 }
-.blocR >a> h3{
+.blocR > h3{
     text-align: center;
     margin-bottom: 1.75rem;
     color: var(--primary);
@@ -92,16 +92,47 @@ p{
 .blocL{
     margin:5%;
 }
-.blocL > a >h3{
+.blocL  >h3{
     text-align: center;
     margin-bottom: 1.75rem;
     color: var(--secondary);
 }
+
+/* Image effect & animation*/
 .imgHov{
     border-radius:10px;
+    overflow: hidden;
 }
-.imgHov:hover{
+.imgHov:hover>img{
     filter:blur(2px);
+}
+
+.imgHov:hover > .bottomSlide{
+    animation-name: slideBottom;
+    animation-duration: 2s;
+    transition: ease-in-out;
+    display: block;
+}
+.linkBtn{
+    text-align: center;
+    font-weight: 600;
+    color:white ;
+    width: 30%;
+    margin-left: 23%;
+    display: inline;
+    height: 20px;
+}
+.linkBtn:hover{
+    color: black;
+}
+.bottomSlide{
+    position: relative;
+    background-color: rgba(151, 151, 151, 0.534);
+    display: none;
+}
+@keyframes slideBottom{
+    from{display:none; top:25px;}
+    to{ display:block; top:0px; }
 }
 
 /*About & contact*/
@@ -218,3 +249,7 @@ p{
     }
 
 }
+
+
+
+
