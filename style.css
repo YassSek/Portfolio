@@ -92,7 +92,7 @@ p{
 .blocL{
     margin:5%;
 }
-.blocL  >h3{
+.blocL >h3{
     text-align: center;
     margin-bottom: 1.75rem;
     color: var(--secondary);
@@ -111,24 +111,25 @@ p{
     animation-name: slideBottom;
     animation-duration: 2s;
     transition: ease-in-out;
-    display: block;
+    visibility: visible;
 }
 .linkBtn{
     text-align: center;
-    font-weight: 600;
-    color:white ;
+    font-weight: 400;
+    color:black ;
     width: 30%;
     margin-left: 23%;
     display: inline;
     height: 20px;
 }
 .linkBtn:hover{
-    color: black;
+    color: white;
+    font-weight: 600;
 }
 .bottomSlide{
     position: relative;
     background-color: rgba(151, 151, 151, 0.534);
-    display: none;
+    visibility: hidden;
 }
 @keyframes slideBottom{
     from{display:none; top:25px;}
@@ -223,7 +224,14 @@ p{
 
 /* Mobile */
 
-@media (min-width: 320px) and (max-width: 767px){
+@media (min-width: 330px) and (max-width:768px){
+
+    #contact{
+     margin-right: 10%;
+    }
+    #about{
+        margin-left: 10%;
+    }
 
     #blocContact{
         width:100vw;
@@ -236,6 +244,7 @@ p{
         height: 150vh;
     }
 
+
     @keyframes slideLeft {
     from {  margin-left: -50vw;}
     to { margin-left: 0px;}
@@ -247,6 +256,8 @@ p{
         to { margin-left: 0px;}
             
     }
+
+
 
 }
 
