@@ -10,7 +10,6 @@ aboutBtn.addEventListener('click', () =>{
         blocAbout.classList.add('slideAbout'); 
         blocAbout.style.display="block";
     }
-
    document.addEventListener('scroll',()=>{
         if(window.scrollY>50){
             blocAbout.style.display="none";  
@@ -26,7 +25,7 @@ contactBtn.addEventListener('click', () =>{
         blocContact.style.display="block";
     }
     document.addEventListener('scroll',()=>{
-        if(window.scrollY>50){
+        if(window.scrollY>40){
             blocContact.style.display="none";
         } 
     })
