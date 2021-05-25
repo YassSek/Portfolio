@@ -1,30 +1,31 @@
 :root {
-    --primary:#FFB5C2;
-    --secondary:#61d9e7;
-    --myblack:#171A21;
+    --primary: #FFB5C2;
+    --secondary: #61d9e7;
+    --myblack: #171A21;
 
-  }
+}
 
-*{
-    margin:0px;
-    padding:0px;
+* {
+    margin: 0px;
+    padding: 0px;
     word-wrap: break-word;
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     width: 100%;
     background-color: rgb(243, 243, 243);
-    color: var(--myblack);  
+    color: var(--myblack);
 }
 
-header{
+header {
     width: 100%;
     height: 5vh;
     text-align: center;
     margin: 1% 0 10% 0;
 }
-h1{
+
+h1 {
     color: rgba(122, 122, 122, 0.452);
     margin: 10px;
     font-weight: bolder;
@@ -35,11 +36,12 @@ h1{
 h1:hover::before {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+
 h1::before {
     position: absolute;
     content: attr(data-content);
-    background: rgb(97,217,231);
-    background: linear-gradient(90deg, rgba(97,217,231,1) 0%, rgba(233,233,233,0.639093137254902) 50%, rgb(250, 154, 171) 100%);
+    background: rgb(97, 217, 231);
+    background: linear-gradient(90deg, rgba(97, 217, 231, 1) 0%, rgba(233, 233, 233, 0.639093137254902) 50%, rgb(250, 154, 171) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
@@ -47,11 +49,11 @@ h1::before {
 }
 
 
-h3{
+h3 {
     font-weight: bold;
 }
 
-p{
+p {
     margin: 15px;
     text-align: justify;
     font-weight: normal;
@@ -59,109 +61,126 @@ p{
     line-height: 1.75rem;
 }
 
-.container{
-    margin: 0 20% 0 20% ;
+.container {
+    margin: 0 20% 0 20%;
     width: 60%;
 }
 
-.card{
-    padding:15px;
+.card {
+    padding: 15px;
     margin: 10px;
     box-shadow: 0 4px 10px #000;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
-.mybtn{
+.mybtn {
     margin: 15px;
     padding: 5px;
     border: none;
     color: white;
 }
 
-.blocR{
-    margin:5%;
+.blocR {
+    margin: 5%;
 }
-.blocR > h3{
+
+.blocR>h3 {
     text-align: center;
     margin-bottom: 1.75rem;
     color: var(--primary);
 }
 
-.blocL{
-    margin:5%;
+.blocL {
+    margin: 5%;
 }
-.blocL >h3{
+
+.blocL>h3 {
     text-align: center;
     margin-bottom: 1.75rem;
     color: var(--secondary);
 }
 
 /* Image effect & animation*/
-.imgHov{
-    border-radius:10px;
+.imgHov {
+    border-radius: 10px;
     overflow: hidden;
 }
-.imgHov:hover>img{
-    filter:blur(2px);
+
+.imgHov:hover>img {
+    filter: blur(2px);
 }
 
-.imgHov:hover > .bottomSlide{
+.imgHov:hover>.bottomSlide {
     animation-name: slideBottom;
     animation-duration: 2s;
     transition: ease-in-out;
     visibility: visible;
 }
-.linkBtn{
+
+.linkBtn {
     text-align: center;
     font-weight: 400;
-    color:black ;
+    color: black;
     width: 30%;
     margin-left: 23%;
     display: inline;
     height: 20px;
 }
-.linkBtn:hover{
+
+.linkBtn:hover {
     color: white;
     font-weight: 600;
 }
-.bottomSlide{
+
+.bottomSlide {
     position: relative;
     background-color: rgba(151, 151, 151, 0.534);
     visibility: hidden;
 }
-@keyframes slideBottom{
-    from{display:none; top:25px;}
-    to{ display:block; top:0px; }
+
+@keyframes slideBottom {
+    from {
+        display: none;
+        top: 25px;
+    }
+
+    to {
+        display: block;
+        top: 0px;
+    }
 }
 
 /*About & contact*/
 
-#about{
+#about {
     z-index: 12;
     background-color: var(--primary);
 }
-#blocAbout{
+
+#blocAbout {
     z-index: 12;
     position: absolute;
     display: none;
-    background-color: var(--primary) ;
-    margin-left:0px;
+    background-color: var(--primary);
+    margin-left: 0px;
     margin-top: -20px;
     width: 50vw;
     height: 100vh;
 }
-#blocAbout>article{
+
+#blocAbout>article {
     width: 80%;
     margin: 10%;
     font-weight: bold;
     color: white;
 
 }
-#blocAbout>article>h2{
-display: inline-block;
+
+#blocAbout>article>h2 {
+    display: inline-block;
 }
 
-#blocAbout > article > button{
+#blocAbout>article>button {
     display: block;
     padding: 5px;
     margin: 15px;
@@ -171,25 +190,28 @@ display: inline-block;
     font-weight: bold;
 }
 
-.socialMed{
+.socialMed {
     font-size: xx-large;
 }
-.socialMed > a {
+
+.socialMed>a {
     margin: 5px;
 }
-.socialMed > a:hover{
+
+.socialMed>a:hover {
     color: var(--secondary);
 }
 
-#contact{
+#contact {
     z-index: 12;
     background-color: var(--secondary);
 }
-#blocContact{
+
+#blocContact {
     z-index: 10;
     position: absolute;
     display: none;
-    background-color: var(--secondary) ;
+    background-color: var(--secondary);
     margin-right: 0px;
     margin-left: 50vw;
     margin-top: -20px;
@@ -197,32 +219,37 @@ display: inline-block;
     height: 100vh;
 }
 
-#blocContact > form{
+#blocContact>form {
     margin: 20%;
     font-weight: bold;
     color: white;
 }
 
-.infoContact{
-    display: inline-block;  
+.infoContact {
+    display: inline-block;
 }
-.infoContact > label{
+
+.infoContact>label {
     margin: 10px;
 }
-.infoContact > input{
+
+.infoContact>input {
     border-radius: 10px;
 }
-#msgContact>label{
+
+#msgContact>label {
     margin-top: 10%;
     display: flex;
     justify-content: center;
 }
-#msgContact>textarea{
+
+#msgContact>textarea {
     width: 30vw;
     height: 25vh;
     border-radius: 10px;
 }
-#msgContact>input{
+
+#msgContact>input {
     width: 80px;
     height: 40px;
     border-radius: 10px;
@@ -234,55 +261,69 @@ display: inline-block;
     animation-name: slideLeft;
     animation-duration: 2s;
 }
+
 .slideContact {
     animation-name: slideRight;
     animation-duration: 2s;
 }
+
 @keyframes slideLeft {
-    from {  margin-left: -50vw;}
-    to { margin-left: 0vw;}        
+    from {
+        margin-left: -50vw;
+    }
+
+    to {
+        margin-left: 0vw;
+    }
 }
 
-@keyframes slideRight{
-    from {  margin-left: 120vw;}
-    to { margin-left: 50vw;}
+@keyframes slideRight {
+    from {
+        margin-left: 120vw;
+    }
+
+    to {
+        margin-left: 50vw;
+    }
 }
 
 
 
 /* Mobile */
 
-@media (min-width: 330px) and (max-width:768px){
+@media (min-width: 321px) and (max-width:668px) {
 
-    .container{
-        margin: 0 10% 0 10% ;
+    .container {
+        margin: 0 10% 0 10%;
         width: 80%;
     }
 
 
-    #contact{
-     margin-right: 10%;
+    #contact {
+        margin-right: 10%;
     }
-    #about{
+
+    #about {
         margin-left: 10%;
     }
 
-    #blocContact{
-        width:100vw;
+    #blocContact {
+        width: 100vw;
         height: 150vh;
-        margin-left:0px;
+        margin-left: 0px;
     }
-    .socialMed{
+
+    .socialMed {
         font-size: x-large;
     }
 
-    #blocAbout{
-        width:100vw;
+    #blocAbout {
+        width: 100vw;
         height: 150vh;
     }
 
-    
-    #blocContact > form{
+
+    #blocContact>form {
         width: 100%;
         margin: 10%;
         margin-top: 15%;
@@ -290,71 +331,87 @@ display: inline-block;
         color: white;
     }
 
-    .infoContact{
-        display: inline-block;  
+    .infoContact {
+        display: inline-block;
     }
-    .infoContact > label{
+
+    .infoContact>label {
         margin: 10px;
     }
-    .infoContact > input{
+
+    .infoContact>input {
         border-radius: 10px;
         margin-top: 10px;
     }
-    #msgContact>label{
+
+    #msgContact>label {
         margin: 10px;
         display: block;
         justify-content: center;
     }
-    #msgContact>textarea{
+
+    #msgContact>textarea {
         margin: 10px;
         width: 85vw;
         height: 25vh;
         border-radius: 10px;
     }
-    #msgContact>input{
+
+    #msgContact>input {
         padding: 5px;
         margin: 10px;
-        display:block;
-        width: auto ;
+        display: block;
+        width: auto;
         height: auto;
         background-color: var(--primary);
     }
 
-    #blocAbout>article>button{
+    #blocAbout>article>button {
         padding: 5px;
         margin: 10px;
         width: auto;
         height: auto;
     }
 
+    .bottomSlide {
+        width: 100%;
+    }
 
-    .linkBtn{
-        font-weight:small;
-        width: 25%;
-        margin: 10%;
+    .linkBtn {
+        font-weight: small;
+        width: 30%;
+        margin: 0 5% 0 10%;
+
         height: 10px;
     }
-    .linkBtn:hover{
+
+    .linkBtn:hover {
         font-weight: normal;
     }
 
 
     @keyframes slideLeft {
-    from {  margin-left: -50vw;}
-    to { margin-left: 0px;}
-        
+        from {
+            margin-left: -50vw;
+        }
+
+        to {
+            margin-left: 0px;
+        }
+
     }
 
-    @keyframes slideRight{
-        from {  margin-left: 100vw;}
-        to { margin-left: 0px;}
-            
+    @keyframes slideRight {
+        from {
+            margin-left: 100vw;
+        }
+
+        to {
+            margin-left: 0px;
+        }
+
     }
 
 
 
 }
-
-
-
-
