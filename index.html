@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/SYFavicon.ico" >
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/78a2209bfa.js" crossorigin="anonymous"></script>
-    
+
     <title>Document</title>
 </head>
+
 <body>
 
-   
-    <div id="blocAbout" >
 
+    <div id="blocAbout">
+               
         <article>
-            <h2 class="text-base md:text-xl lg:text-3xl">You can call me miniyass</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio officia, corrupti animi eos nihil non natus consequatur quas! Similique accusantium voluptates perspiciatis repellendus, vero assumenda magnam fuga laborum aperiam.</p>
-            
+            <h2 class="text-base md:text-xl lg:text-3xl">presentation</h2>
+                
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam distinctio officia, corrupti animi eos
+                nihil non natus consequatur quas! Similique accusantium voluptates perspiciatis repellendus, vero
+                assumenda magnam fuga laborum aperiam.</p>
+
             <h2 class="text-base md:text-xl lg:text-3xl"> Follow me on :</h2>
             <span class="socialMed">
-                <a href="https://www.linkedin.com/in/yassine-sekri-dev/"  target="_blank"> <i class="fab fa-linkedin-in"></i> </a>
-                <a href="https://github.com/MiniYass"  target="_blank"> <i class="fab fa-github"></i> </a>
+                <a href="https://www.linkedin.com/in/yassine-sekri-dev/" target="_blank"> <i
+                        class="fab fa-linkedin-in"></i> </a>
+                <a href="https://github.com/MiniYass" target="_blank"> <i class="fab fa-github"></i> </a>
             </span>
-                 
-     
-          
 
-            <button class="mybtn" type="submit" onclick="window.open('./Sekri-webDev.pdf')"> Resume <i class="fas fa-download"></i> </button>
+
+
+
+            <button class="mybtn" type="submit" onclick="window.open('./Sekri-webDev.pdf')"> Resume <i
+                    class="fas fa-download"></i> </button>
         </article>
-      
-        
-   
+
+
+
     </div>
 
-    <div id="blocContact" >
+    <div id="blocContact">
 
         <form id="contact-form">
-            
+
             <input type="hidden" name="contact_number">
 
             <span class="infoContact">
@@ -52,120 +60,125 @@
                 <label>Email</label>
                 <input type="email" name="user_email" placeholder=" Please enter your e-mail">
             </span>
-            
+
             <span id="msgContact">
                 <label>Message</label>
                 <textarea name="message" placeholder=" Your message here ..."></textarea>
                 <input type="submit" value="Send">
             </span>
-            
 
-            
         </form>
     </div>
-    
+
 
     <header>
         <button id="about" class="-left-0 top-0 absolute font-bold rounded mybtn">ABOUT</button>
         <h1 data-content="SEKRI YASSINE" class="text-lg md:text-3xl lg:text-5xl">SEKRI YASSINE</h1>
         <h1 data-content="WEB DEVELOPER" class="text-lg md:text-3xl lg:text-5xl">WEB DEVELOPER</h1>
         <button id="contact" class="-right-0 top-0 absolute font-bold rounded mybtn">CONTACT</button>
-    </header>    
+    </header>
 
     <div class="grid grid-rows-4 lg:grid-cols-2 grid-flow-row container md:grid-cols-1 ">
 
-            <!-- ROW 1 -->
-            <div class="col-span-2 grid grid-cols-2 card">
+        <!-- ROW 1 -->
+        <div class="col-span-2 grid grid-cols-2 card">
 
-                <div class="col-span-2 lg:col-span-1 blocL">
-                    <h3 class="text-base lg:text-4xl md:text-lg">Allez-Cine </h3>
-                    <p class="text-xs md:text-base lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero quia amet repellat sit fugit qui corrupti. Eligendi, et laudantium quam, aspernatur in nisi maxime explicabo sapiente tempore quis eaque voluptate!</p>
+            <div class="col-span-2 lg:col-span-1 blocL">
+                <h3 class="text-base lg:text-4xl md:text-lg">Allez-Cine </h3>
+                <p class="text-xs md:text-base lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Libero quia amet repellat sit fugit qui corrupti. Eligendi, et laudantium quam, aspernatur in nisi
+                    maxime explicabo sapiente tempore quis eaque voluptate!</p>
+            </div>
+
+            <div class="col-span-2 lg:col-span-1 md:col-span-2">
+
+                <div class="imgHov">
+                    <img class="object-cover" src="./img/Allezcine.png" alt="Allez ciné screenshot">
+                    <div class="bottomSlide">
+                        <a class="linkBtn" href="https://miniyass.github.io/Allez-Cine/" target="_blank">View Demo</a>
+                        <a class="linkBtn" href="https://github.com/MiniYass/Allez-Cine" target="_blank">View Code</a>
+                    </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="col-span-2 lg:col-span-1 md:col-span-2">
 
-                    <div class="imgHov">
-                        <img class="object-cover" src="./img/Allezcine.png" alt="Allez ciné screenshot">
-                        <div class="bottomSlide">
-                            <a class="linkBtn" href="https://miniyass.github.io/Allez-Cine/" target="_blank" >View Demo</a>
-                            <a class="linkBtn" href="https://github.com/MiniYass/Allez-Cine" target="_blank" >View Code</a>
-                        </div>
+        <!-- ROW 2 -->
+        <div class="col-span-2  grid grid-cols-2 card ">
+
+            <div class="col-span-2 lg:col-span-1">
+                <div class="imgHov">
+                    <img class="object-cover " src="./img/todoapp.jpg" alt="ici un petit geranium">
+                    <div class="bottomSlide">
+                        <a class="linkBtn" href="https://miniyass.github.io/TodoList-Challenge/" target="_blank">View
+                            Demo</a>
+                        <a class="linkBtn" href="https://github.com/MiniYass/TodoList-Challenge" target="_blank">View
+                            Code</a>
                     </div>
                 </div>
             </div>
 
-            
-            <!-- ROW 2 -->
-            <div class="col-span-2  grid grid-cols-2 card ">
+            <div class="col-span-2 lg:col-span-1 blocR">
+                <h3 class="text-base lg:text-4xl md:text-lg">Todo App </h3>
+                <p class="text-xs md:text-bases lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eum quia maxime, culpa quibusdam quod fugit recusandae ullam labore cum hic eveniet provident
+                    possimus soluta officia! Error sunt quas exercitationem non.</p>
+            </div>
+        </div>
 
-                <div  class="col-span-2 lg:col-span-1">   
-                    <div class="imgHov">
-                        <img class="object-cover " src="./img/todoapp.jpg" alt="ici un petit geranium">
-                        <div class="bottomSlide">
-                            <a class="linkBtn" href="https://miniyass.github.io/TodoList-Challenge/" target="_blank" >View Demo</a>
-                            <a class="linkBtn" href="https://github.com/MiniYass/TodoList-Challenge" target="_blank" >View Code</a>
-                        </div>
+        <!-- ROW 3 -->
+        <div class="col-span-2 lg:col-span-2 grid grid-cols-2 card ">
+
+            <div class="col-span-2 lg:col-span-1 blocL">
+                <h3 class="text-base lg:text-4xl md:text-lg">Vue Pomodoro </h3>
+                <p class="text-xs md:text-bases lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Officiis harum aliquid sed alias odit sequi ea earum, aperiam quo cupiditate similique. Culpa alias
+                    fugit sunt ipsa eos dolores labore. Accusantium.</p>
+            </div>
+
+            <div class="col-span-2 lg:col-span-1">
+                <div class="imgHov">
+                    <img class="object-cover " src="./img/Pomodoro.png" alt="Pomodoro Screenshot">
+                    <div class="bottomSlide">
+                        <a class="linkBtn" href="https://miniyass.github.io/pomodoro/" target="_blank">View Demo</a>
+                        <a class="linkBtn" href="https://github.com/MiniYass/pomodoro" target="_blank">View Code</a>
                     </div>
                 </div>
 
-                <div  class="col-span-2 lg:col-span-1 blocR">
-                    <h3 class="text-base lg:text-4xl md:text-lg">Todo App </h3>
-                    <p class="text-xs md:text-bases lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quia maxime, culpa quibusdam quod fugit recusandae ullam labore cum hic eveniet provident possimus soluta officia! Error sunt quas exercitationem non.</p>
-                </div>
             </div>
 
-            <!-- ROW 3 -->
-            <div class="col-span-2 lg:col-span-2 grid grid-cols-2 card ">   
+        </div>
 
-                <div  class="col-span-2 lg:col-span-1 blocL">
-                    <h3 class="text-base lg:text-4xl md:text-lg">Vue Pomodoro </h3>
-                    <p class="text-xs md:text-bases lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis harum aliquid sed alias odit sequi ea earum, aperiam quo cupiditate similique. Culpa alias fugit sunt ipsa eos dolores labore. Accusantium.</p>
-                </div>
+        <!-- ROW 4 -->
+        <div class="col-span-2 grid grid-cols-2 card ">
 
-                <div class="col-span-2 lg:col-span-1">
-                    <div class="imgHov">
-                        <img class="object-cover " src="./img/Pomodoro.png" alt="Pomodoro Screenshot">
-                        <div class="bottomSlide">
-                             <a class="linkBtn" href="https://miniyass.github.io/pomodoro/" target="_blank" >View Demo</a> 
-                            <a class="linkBtn" href="https://github.com/MiniYass/pomodoro" target="_blank" >View Code</a>
-                        </div>
+            <div class="col-span-2 lg:col-span-1 ">
+                <div class="imgHov">
+                    <img class="object-cover imgHov" src="./img/iptracker.jpg" alt="ici un petit geranium">
+                    <div class="bottomSlide">
+                        <a class="linkBtn" href="https://miniyass.github.io/Ip-Tracker/" target="_blank">View Demo</a>
+                        <a class="linkBtn" href="https://github.com/MiniYass/Ip-Tracker" target="_blank">View Code</a>
                     </div>
-                    
-                </div>
-
-            </div>
-
-            <!-- ROW 4 -->
-            <div class="col-span-2 grid grid-cols-2 card ">
-
-                <div  class="col-span-2 lg:col-span-1 ">   
-                    <div class="imgHov">
-                        <img class="object-cover imgHov" src="./img/iptracker.jpg" alt="ici un petit geranium">
-                        <div class="bottomSlide">
-                            <a class="linkBtn" href="https://miniyass.github.io/Ip-Tracker/" target="_blank" >View Demo</a>
-                            <a class="linkBtn" href="https://github.com/MiniYass/Ip-Tracker" target="_blank" >View Code</a>
-                        </div>
-                    </div> 
-                </div>
-
-                <div  class="col-span-2 lg:col-span-1 blocR ">
-                    <h3 class="text-base lg:text-4xl md:text-lg">IP Tracker</h3>
-                    <p class="text-xs md:text-base lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quia maxime, culpa quibusdam quod fugit recusandae ullam labore cum hic eveniet provident possimus soluta officia! Error sunt quas exercitationem non.</p>
                 </div>
             </div>
-        
-        
+
+            <div class="col-span-2 lg:col-span-1 blocR ">
+                <h3 class="text-base lg:text-4xl md:text-lg">IP Tracker</h3>
+                <p class="text-xs md:text-base lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+                    quia maxime, culpa quibusdam quod fugit recusandae ullam labore cum hic eveniet provident possimus
+                    soluta officia! Error sunt quas exercitationem non.</p>
+            </div>
+        </div>
+
+
     </div>
 
     <footer></footer>
 
     <script src="script.js"></script>
-    
+
 
 </body>
+
 </html>
 
-<!-- 
-INSPIRATION 
-
-https://utica-demo.squarespace.com/?nochrome=true -->

@@ -1,7 +1,11 @@
 :root {
-    --primary: #FFB5C2;
-    --secondary: #61d9e7;
+
+    /* --primary: #FFB5C2;
+    --secondary: #61d9e7; */
+    --primary: #009fff;
+    --secondary: #ec2f4b;
     --myblack: #171A21;
+    --mywhite:rgb(243, 243, 243);
 
 }
 
@@ -14,7 +18,7 @@
 
 body {
     width: 100%;
-    background-color: rgb(243, 243, 243);
+    background-color: var(--mywhite);
     color: var(--myblack);
 }
 
@@ -40,8 +44,8 @@ h1:hover::before {
 h1::before {
     position: absolute;
     content: attr(data-content);
-    background: rgb(97, 217, 231);
-    background: linear-gradient(90deg, rgba(97, 217, 231, 1) 0%, rgba(233, 233, 233, 0.639093137254902) 50%, rgb(250, 154, 171) 100%);
+    background: rgb(236,47,75);
+    background: linear-gradient(90deg, rgba(236,47,75,1) 0%, rgba(0,159,255,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
@@ -171,9 +175,9 @@ p {
 #blocAbout>article {
     width: 80%;
     margin: 10%;
+    margin-top: 15%;
     font-weight: bold;
     color: white;
-
 }
 
 #blocAbout>article>h2 {
@@ -371,10 +375,6 @@ p {
         margin: 10px;
         width: auto;
         height: auto;
-    }
-
-    .bottomSlide {
-        width: 100%;
     }
 
     .linkBtn {
