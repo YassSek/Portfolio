@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/78a2209bfa.js" crossorigin="anonymous"></script>
 
-    <title>Document</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_HqWZczGx30W1tpRsk6UF8");
+    })();
+    </script>
+
+    <title>Portfolio</title>
 </head>
 
 <body>
@@ -46,25 +53,22 @@
     </div>
 
     <div id="blocContact">
-
         <form id="contact-form">
-
             <input type="hidden" name="contact_number">
-
             <span class="infoContact">
                 <label>Name</label>
-                <input type="text" name="user_name" placeholder=" Please enter your name">
+                <input type="text" name="user_name" id="userName" placeholder=" Please enter your name">
             </span>
 
             <span class="infoContact">
                 <label>Email</label>
-                <input type="email" name="user_email" placeholder=" Please enter your e-mail">
+                <input type="email" name="user_email" id="userMail" placeholder=" Please enter your e-mail">
             </span>
 
             <span id="msgContact">
                 <label>Message</label>
-                <textarea name="message" placeholder=" Your message here ..."></textarea>
-                <input type="submit" value="Send">
+                <textarea name="message" id="userMsg" placeholder=" Your message here ..."></textarea>
+                <input type="submit" value="Send" onclick="sendMail()">
             </span>
 
         </form>
@@ -176,8 +180,6 @@
     <footer></footer>
 
     <script src="script.js"></script>
-
-
 </body>
 
 </html>

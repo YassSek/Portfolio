@@ -30,3 +30,18 @@ contactBtn.addEventListener('click', () => {
         }
     })
 })
+
+
+
+function sendMail(prms){
+    let tempParams={
+        from_name:document.getElementById("userName").value,
+        from_email:document.getElementById("userMail").value,
+        message:document.getElementById("userMsg").value 
+    };
+
+    emailjs.send("Portfolio_4oj6gqx","template_4nmozz8",tempParams)
+    .then((res)=>{ alert("your message has been sent"); console.log(res.status) },
+    (error)=>{alert("your message has not been sent");
+    })
+}
