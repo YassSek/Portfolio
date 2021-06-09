@@ -239,7 +239,9 @@ p {
 
 .infoContact>input {
     border-radius: 10px;
+    color:black;
 }
+
 
 #msgContact>label {
     margin-top: 10%;
@@ -251,6 +253,8 @@ p {
     width: 30vw;
     height: 25vh;
     border-radius: 10px;
+    padding: 5px;
+    color:black;
 }
 
 #msgContact>input {
