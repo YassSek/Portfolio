@@ -12,12 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/78a2209bfa.js" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function() {
-    emailjs.init("user_HqWZczGx30W1tpRsk6UF8");
-    })();
-    </script>
+ 
 
     <title>Portfolio</title>
 </head>
@@ -68,7 +63,7 @@
             <span id="msgContact">
                 <label>Message</label>
                 <textarea name="message" id="userMsg" placeholder=" Your message here ..."></textarea>
-                <input type="submit" value="Send" onclick="sendMail()">
+                <input type="submit" value="Send" id="submitMsg">
             </span>
 
         </form>
@@ -180,6 +175,10 @@
     <footer></footer>
 
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {emailjs.init("user_HqWZczGx30W1tpRsk6UF8");})();
+    </script>
 </body>
 
 </html>

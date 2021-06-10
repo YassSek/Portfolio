@@ -3,6 +3,8 @@ const aboutBtn = document.getElementById('about');
 const blocAbout = document.getElementById('blocAbout');
 const blocContact = document.getElementById('blocContact');
 
+const submitMsg = document.getElementById('submitMsg')
+
 aboutBtn.addEventListener('click', () => {
     if (blocAbout.style.display == "block") {
         blocAbout.style.display = "none";
@@ -31,9 +33,15 @@ contactBtn.addEventListener('click', () => {
     })
 })
 
+window.onload = () =>{
+    submitMsg.addEventListener('click',() =>{
+        preventDefault();
+        sendMail();})
+}
 
 
-function sendMail(prms){
+
+function sendMail(){
     let tempParams={
         from_name:document.getElementById("userName").value,
         from_email:document.getElementById("userMail").value,
@@ -41,7 +49,8 @@ function sendMail(prms){
     };
 
     emailjs.send("Portfolio_4oj6gqx","template_4nmozz8",tempParams)
-    .then((res)=>{ alert("your message has been sent"); console.log(res.status) },
-    (error)=>{alert("your message has not been sent");
+    .then((res)=>{  console.log("your message has been sent",res.status) 
+                },
+    (error)=>{console.log("your message has not been sent",error);
     })
 }
