@@ -35,7 +35,7 @@ contactBtn.addEventListener('click', () => {
 
 window.onload = () =>{
     submitMsg.addEventListener('click',() =>{
-        preventDefault();
+        event.preventDefault();
         sendMail();})
 }
 
